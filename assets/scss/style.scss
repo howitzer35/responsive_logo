@@ -1,0 +1,261 @@
+
+#header {
+  font-family: "Anton", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: white;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  direction: flex;
+  padding-left: 15px;
+}
+
+.links {
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+@media (min-width: 200px) {
+  #header {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  #header {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@mixin logobox ($width, $height, $image, $bgps, $margin) {
+  width: $width;
+  height: $height;
+  background: url($image);
+  background-position: $bgps;
+  margin: $margin;
+}
+
+$black: #1a1a1a;
+
+.coke {
+  background-color: #F24E3C;
+}
+
+.chanel {
+  background-color: $black;
+}
+
+.nike {
+  background-color: #8BEAD8;
+}
+
+.mtv {
+  background-color: #fded02;
+}
+
+.new_balance {
+  background-color: #3A7989;
+}
+
+.aston_martin {
+  background-color: $black;
+}
+
+.heinz {
+  background-color: #e40520;
+}
+
+.lacoste {
+  background-color: #f1f1f1;
+}
+
+.bang {
+  background-color: #333;
+}
+
+.disney {
+  background-color: #1F7FDD;
+}
+
+.levis {
+  background-color: #e0e0e0;
+}
+
+.guinness {
+  background-color: #282525;
+}
+
+.victorinox {
+  background-color: #AD1E3C;
+}
+
+.kodak {
+  background-color: #ffcb04;
+}
+
+.wb {
+  background-color: #b2b2b2;
+}
+
+.heineken {
+  background-color: #3f7a2c;
+}
+
+/*---Style for overlay---*/
+
+/*.content {
+  display: flex;
+  position: relative;
+}*/
+
+.image1 {
+  @include logobox (300px, 300px, "../images/logo2.svg", center top, 0 auto)
+}
+
+.image2 {
+  @include logobox (300px, 300px, "../images/logo3.svg", center top, 0 auto)
+}
+
+.image3 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo1.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image4 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo15.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image5 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo16.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image6 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo13.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image7 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo12.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image8 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo17.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image9 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo6.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image10 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo7.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image11 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo5.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image12 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo8.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image13 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo4.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image14 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo9.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image15 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo10.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+.image16 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/logo11.svg");
+  background-position: center top;
+  margin: 0 auto;
+}
+
+
+#footer {
+	padding:20px;
+	background-color: black;
+}
+
+p {
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: gray;
+}
